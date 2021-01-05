@@ -9,6 +9,5 @@ jobs:
       with:
         use-quiet-mode: 'yes'
         file-extension: 'mdx'
-        check-modified-files-only: 'yes'
         folder-path: 'website/content/docs,website/content/guides,website/content/intro'
 
