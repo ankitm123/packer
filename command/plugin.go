@@ -10,6 +10,9 @@ import (
 	"regexp"
 	"strings"
 
+	packersdk "github.com/hashicorp/packer/packer-plugin-sdk/packer"
+	"github.com/hashicorp/packer/packer-plugin-sdk/plugin"
+
 	alicloudecsbuilder "github.com/hashicorp/packer/builder/alicloud/ecs"
 	amazonchrootbuilder "github.com/hashicorp/packer/builder/amazon/chroot"
 	amazonebsbuilder "github.com/hashicorp/packer/builder/amazon/ebs"
@@ -63,8 +66,6 @@ import (
 	vsphereisobuilder "github.com/hashicorp/packer/builder/vsphere/iso"
 	yandexbuilder "github.com/hashicorp/packer/builder/yandex"
 	amazonamidatasource "github.com/hashicorp/packer/datasource/amazon/ami"
-	packersdk "github.com/hashicorp/packer/packer-plugin-sdk/packer"
-	"github.com/hashicorp/packer/packer-plugin-sdk/plugin"
 	alicloudimportpostprocessor "github.com/hashicorp/packer/post-processor/alicloud-import"
 	amazonimportpostprocessor "github.com/hashicorp/packer/post-processor/amazon-import"
 	artificepostprocessor "github.com/hashicorp/packer/post-processor/artifice"
