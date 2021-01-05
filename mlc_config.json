@@ -1,0 +1,14 @@
+{
+  "replacementPatterns": [
+    {
+      "pattern": "^/docs",
+      "replacement": "https://packer.io/docs/"
+    },
+    {
+      "pattern": "^/guides",
+      "replacement": "https://packer.io/guides/"
+    }
+  ],
+  "timeout": "20s",
+  "retryOn429": true
+}
