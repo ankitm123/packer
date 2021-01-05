@@ -9,7 +9,7 @@ jobs:
       with:
         use-quiet-mode: 'yes'
         file-extension: 'mdx'
-        config-file: '.mlc_config.json',
+        config-file: '.mlc_config.json'
         folder-path: 'website/content/docs,website/content/guides,website/content/intro'
 
 on:
@@ -25,6 +25,6 @@ jobs:
       with:
         use-quiet-mode: 'yes'
         file-extension: 'mdx'
-        config-file: '.mlc_config.json',
+        config-file: '.mlc_config.json'
         folder-path: 'website/content/docs,website/content/guides,website/content/intro'
 
