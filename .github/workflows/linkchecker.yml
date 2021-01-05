@@ -1,7 +1,6 @@
+on: [pull_request]
 jobs:
-  job1:
-  on: [pull_request]
-  name: Check Markdown links for modified files
+name: Check Markdown links for modified files
   markdown-link-check:
     runs-on: ubuntu-latest
     steps:
@@ -12,20 +11,4 @@ jobs:
         file-extension: 'mdx'
         config-file: '.mlc_config.json'
         folder-path: 'website/content/docs,website/content/guides,website/content/intro'
-
-  job2:
-  on:
-    schedule:
-    - cron: "45 0 * * 2"
-    name: Check Markdown links on master
-    markdown-link-check:
-      runs-on: ubuntu-latest
-      steps:
-      - uses: actions/checkout@master
-      - uses: gaurav-nelson/github-action-markdown-link-check@v1
-        with:
-          use-quiet-mode: 'yes'
-          file-extension: 'mdx'
-          config-file: '.mlc_config.json'
-          folder-path: 'website/content/docs,website/content/guides,website/content/intro'
 
